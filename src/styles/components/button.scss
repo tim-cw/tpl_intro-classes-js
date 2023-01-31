@@ -1,0 +1,31 @@
+/* ==========================================================================
+   button / components
+   ========================================================================== */
+.section {
+    margin-top: 10rem;
+
+    h2 {
+        margin: 0;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        line-height: 1;
+    }
+}
+
+.button {
+    color: var(--color-white);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    border: 2px var(--color-primary) solid;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all .2s ease-out;
+
+    &:hover {
+        background: var(--color-primary);
+    }
+}

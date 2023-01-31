@@ -1,0 +1,58 @@
+/* ==========================================================================
+   intro / components
+   ========================================================================== */
+
+.intro {
+    padding-top: var(--spacing-md);
+
+    h2 {
+        margin-top: var(--spacing-md);
+    }
+}
+
+ol {
+    list-style: none;
+    padding-left: 0;
+    li {
+        color: var(--color-primary);
+    }
+}
+
+ol ol {
+    list-style: decimal;
+    padding-left: 40px;
+}
+ol ol,
+ol ul {
+    li {
+        color: var(--color-white);
+    }
+}
+
+ol,
+ul {
+    margin-bottom: 30px;
+}
+
+.highlight {
+    color: var(--color-primary);
+    font-style: italic;
+}
+
+.how-to {
+    margin-top: 60px;
+    details {
+        padding: 10px 0;
+    }
+}
+.section-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.links {
+    a {
+        margin: 0 20px;
+    }
+}

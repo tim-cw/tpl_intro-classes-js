@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{ title ? title ~ " | ": '' }} Transitions CSS</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        {% if title %}
+        <nav class="nav__main">
+            <a href="index.html" class="brand"> {{title}} </a>
+            <ul>
+                <li class="back">
+                    <a href="index.html">
+                        <svg class="icon">
+                            <use xlink:href="#icon-arrow-left"></use>
+                        </svg>
+                        Retour
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        {% else %}
+        <nav class="nav__main">
+            <a href="index.html" class="brand"> Intro. aux classes</a>
+            <ul>
+                <li><a href="numero1.html"><span>Numéro </span>#1</a></li>
+                <li><a href="numero2.html"><span>Numéro </span>#2</a></li>
+                <li><a href="numero3.html"><span>Numéro </span>#3</a></li>
+
+                
+            </ul>
+        </nav>
+        {% endif %}
